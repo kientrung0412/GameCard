@@ -3,20 +3,18 @@ import 'package:flame/flame.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/widgets.dart';
 
-import 'model/desk/standard_desk.dart';
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  configRunning();
+  configScreen();
 
   runApp(
     GameWidget(
-      game: MyGame(),
+      game: CardGame(),
     ),
   );
 }
 
-void configRunning() {
+void configScreen() {
   Flame.device
     ..fullScreen()
     ..setLandscape();

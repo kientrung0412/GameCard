@@ -8,9 +8,9 @@ class StandardCard extends Card {
   late String front;
 
   @override
-  String get back => "assets/desk/standard/card/back.png";
+  String get back => "assets/images/desk/standard/card/back.png";
 
   StandardCard(this.id) {
-    front = "assets/desk/standard/card/$id.png";
+    front = "assets/images/desk/standard/card/$id.png";
   }
 }
